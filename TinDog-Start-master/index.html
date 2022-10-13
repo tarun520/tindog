@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
@@ -28,13 +28,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="">contact</a>
+                            <a class="nav-link" href="#footer">contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">pricing</a>
+                            <a class="nav-link" href="#pricing">pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">download</a>
+                            <a class="nav-link" href="#cta">download</a>
                         </li>
                     </ul>
                 </div>
@@ -43,8 +43,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h1>Meet new and interesting dogs nearby.</h1>
-                    <button type="button" class="btn btn-dark btn-lg download-button" <i class="fa-brands fa-apple"></i>Download</button>
-                    <button type="button" class="btn btn-outline-light btn-lg download-button">Download</button>
+                    
+                    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+                    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-windows"></i> Download</button>
                 </div>
                 <div class="col-lg-6">
                     <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
@@ -74,26 +75,30 @@
     </section>
     <!-- Testimonials -->
     <section id="testimonials">
-        <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-                    <img class="testimonials-image" src="images/dog-img.jpg" alt="dog-profile">
-                    <em>Pebbles, New York</em>
-                </div>
-                <div class="carousel-item">
-                    <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-                    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-                    <em>Beverly, Illinois</em>
-                </div>
+              <div class="carousel-item active">
+                <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+                <img class="testimonials-image" src="images/dog-img.jpg" alt="dog-profile">
+                <em>Pebbles, New York</em>
+              </div>
+              <div class="carousel-item">
+                <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+                <img class="testimonial-image1" src="images/lady-img.jpg" alt="lady-profile">
+                <em>Beverly, Illinois</em>
+              </div>
             </div>
-            <a class="carousel-control-prev" href="testimonial-carsouel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="testimonial-carsouel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        
     </section>
     <!-- Press -->
     <section id="press">
@@ -106,8 +111,8 @@
     <section id="pricing">
         <h2>A Plan for Every Dog's Needs</h2>
         <p>Simple and affordable price plans for your and your dog.</p>
-        <div class="row">
             <div class="card-deck">
+                <div class="row">
                 <div class="pricing-column col-lg-4 md-6">
                     <div class="card">
                         <div class="class-header">
@@ -153,15 +158,20 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
     <!-- Call to Action -->
     <section id="cta">
-        <h3>Find the True Love of Your Dog's Life Today.</h3>
-        <button type="button">Download</button>
-        <button type="button">Download</button>
+        <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+        <button type="button"class="down download-button btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i> Download</button>
+        <button type="button" class="download-button btn btn-outline-light btn-lg"><i class="fa-brands fa-windows"></i> Download</button>
     </section>
     <!-- Footer -->
     <footer id="footer">
+        <i class="con fa-brands fa-facebook"></i>
+        <i class="con fa-brands fa-instagram"></i>
+        <i class="con fa-brands fa-twitter"></i>
+        <i class="con fa-sharp fa-solid fa-envelope"></i>
         <p>© Copyright TinDog</p>
     </footer>
 </body>
