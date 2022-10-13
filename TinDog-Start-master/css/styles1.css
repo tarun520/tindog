@@ -37,12 +37,15 @@ h1{
 /* title image */
 .title-image
 {
-    width: 60%;
+    width: 55%;
+    padding-left: 10px;
     transform: rotate(30deg);
+    /* position: absolute; */
 }
 /* features */
 #features{
     padding: 7% 15%;
+    /* position: relative; */
 }
 .features-box{
     text-align: center;
@@ -69,6 +72,9 @@ p{
     text-align: center;
     background-color: #ef8172;
     color: #fff;
+}
+.testimonial-image1{
+    width: 100px;
 }
 h2{
     font-family: "Monserrat-Bold";
@@ -98,4 +104,25 @@ h2{
 {
     padding:3% 2%;
 }
+.btn-lg{
+    margin: 0 0 10px 0;
+}
+/* footer */
+#cta{
+    background-color: #ef8172;
+    color: #fff;
+    padding: 7% 15%;
+    text-align: center;
+}
+.cta-heading{
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+.con{
+    padding: 10px;
 }
